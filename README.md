@@ -42,6 +42,7 @@ The chatbot creates a personalised user experience.
 * Prompts the user to enter their name
 * Displays a customised welcome message
 * Combines text greeting with ASCII design
+* Stores previously asked questions
 
 
 ##  Basic Response System
