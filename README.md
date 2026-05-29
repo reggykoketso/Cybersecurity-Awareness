@@ -1,4 +1,4 @@
-## Cybersecurity Awareness Bot (Part 1)
+## Cybersecurity Awareness Bot (Part 2)
 
  ## Project Overview
 
