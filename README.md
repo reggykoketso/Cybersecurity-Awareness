@@ -1,172 +1,146 @@
-## Cybersecurity Awareness Bot (Part 2)
+## Cybersecurity Awareness Bot (Part 3)Final POE.
 
- ## Project Overview
+## Overview
 
-The Cybersecurity Awareness Bot is a console-based chatbot developed in C# to educate users about basic cybersecurity practices. This project focuses on building a foundational chatbot system with interactive features, multimedia elements, and version control using GitHub.
+CyberSecure Bot is a Windows Forms cybersecurity awareness chatbot developed in C# using .NET 8. The application helps users learn about online safety through interactive conversations, practical cybersecurity tips, task management, activity logging, and quizzes.
 
- ## Objectives
+The chatbot provides information on topics such as phishing, password security, safe browsing, suspicious links, public Wi-Fi safety, privacy protection, and two-factor authentication (2FA).
 
-* Create an interactive chatbot experience
-* Promote cybersecurity awareness
-* Implement structured and readable code
-* Use GitHub for version control and CI workflows
+---
 
-## Voice Greeting
+## Features
 
-A personalised voice greeting is played when the application starts.
+### User Personalisation
 
- Implementation:
+* Users can enter their name when starting the application.
+* The chatbot provides personalised responses based on the user's name.
 
-* A recorded .wav audio file is used
-* The file welcomes the user to the chatbot
-* Audio is played using C# (System.Media.SoundPlayer)
+### Cybersecurity Awareness Chatbot
 
+The chatbot can answer questions about:
 
-## ASCII Image Display
+* Phishing attacks
+* Smishing and vishing
+* Password security
+* Safe browsing practices
+* Public Wi-Fi risks
+* Two-factor authentication (2FA)
+* Online privacy and scams
 
-An ASCII art logo is displayed when the chatbot launches.
+### Task Management
 
-###  Features:
+Users can:
 
-* Cybersecurity-themed ASCII art
-* Displayed as a header/title screen
-* Enhances visual presentation
+* Add cybersecurity-related tasks
+* View existing tasks
+* Mark tasks as completed
+* Manage security reminders
 
+### Activity Logging
 
-##  Text-Based Greeting & Interaction
+* Tracks user actions within the application.
+* Displays recent activities for monitoring user interactions.
 
-The chatbot creates a personalised user experience.
+### Cybersecurity Quiz
 
-###  Features:
+* Interactive quiz system to test cybersecurity knowledge.
+* Provides questions on common cybersecurity concepts.
+* Tracks quiz progress and score.
 
-* Prompts the user to enter their name
-* Displays a customised welcome message
-* Combines text greeting with ASCII design
-* Stores previously asked questions
+### User-Friendly Interface
 
+* Modern Windows Forms interface.
+* Chat window for conversations.
+* Dedicated buttons for tasks, quizzes, and activity logs.
+* Real-time clock display.
 
-##  Basic Response System
+### Audio Greeting
 
-The bot responds to common and cybersecurity-related questions.
+* Includes an audio greeting when interacting with the chatbot.
 
-###  Supported Questions:
 
-* "How are you?"
-* "What is your purpose?"
-* "What can I ask you about?"
 
-###  Cybersecurity Topics:
+## Technologies Used
 
-*  Password safety
-*  Phishing awareness
-*  Safe browsing
+* C#
+* .NET 8
+* Windows Forms (WinForms)
+* Object-Oriented Programming (OOP)
+* Collections (Lists and Dictionaries)
+* Event-Driven Programming
 
 
-##  Input Validation
+## Project Structure
 
-The chatbot handles invalid or unexpected input gracefully.
+PROG6221POE
+│
+├── Form1.cs                 # Main user interface
+├── ChatbotEngine.cs         # Core chatbot logic
+├── ActivityLogger.cs        # Activity logging functionality
+├── QuizManager.cs           # Quiz management
+├── QuizQuestion.cs          # Quiz question model
+├── TaskItem.cs              # Task model
+├── AudioPlayer.cs           # Audio functionality
+├── AsciiArt.cs              # ASCII art support
+└── greeting.wav             # Greeting audio file
 
-###  Features:
 
-* Detects empty input
-* Handles unknown questions
-* Provides fallback response:
 
-  > "I didn't quite understand that. Could you rephrase?"
+## How to Run the Project
+### Prerequisites
 
+* Visual Studio 2022 or later
+* .NET 8 SDK
 
-##  Enhanced Console UI
+### Steps
 
-The chatbot interface is improved for better user experience.
+1. Download or clone the repository.
+2. Open the solution in Visual Studio.
+3. Build the project.
+4. Run the application.
+5. Enter your name and click **Connect**.
+6. Start interacting with CyberSecure Bot.
 
-###  Features:
 
-* Coloured text using console formatting
-* Decorative borders and spacing
-* Section headers and dividers
-* Typing effect (simulated delays for realism)
+## Sample Questions
 
+Users can ask questions such as:
 
-##  Code Structure & Readability
+* What is phishing?
+* How do I create a strong password?
+* What is two-factor authentication?
+* How can I browse safely online?
+* What should I do if I clicked a suspicious link?
+* Is public Wi-Fi safe?
 
-The code is organised for maintainability and clarity.
 
-###  Implementation:
+## Learning Outcomes Demonstrated
 
-* Code split into multiple classes and methods
-* Avoided placing all logic in Program.cs
-* Clear naming conventions used
+This project demonstrates:
 
+* Object-Oriented Programming principles
+* Classes and objects
+* Encapsulation
+* Collections and data management
+* Delegates
+* Event handling
+* GUI development using Windows Forms
+* User interaction design
+* Cybersecurity awareness education
 
-##  GitHub Version Control
 
-The project uses GitHub for tracking progress and changes.
+## Future Improvements
 
-###  Commits:
+* Database integration for persistent storage
+* Advanced chatbot responses using AI/NLP
+* User authentication system
+* Enhanced quiz categories
+* Exportable activity reports
+* Additional cybersecurity learning modules
 
-No prior commits
 
-
-##  Continuous Integration (CI)
-
-GitHub Actions is used to automate checks on the project.
-
-###  Implementation:
-
-* CI workflow created in .github/workflows/
-* Automatically runs on each push
-* Checks include:
-
-  * Successful project build
-  * Syntax validation
-  * Code quality checks
-
-
-
-##  How to Run the Project
-
-1. Clone the repository:
-
-   bash
-   git clone https://github.com/reggykoketso/Cybersercurity-Awareness.git
-   
-2. Open the project in Visual Studio
-3. Build the solution
-4. Run the application
-
-
-
-##  Usage
-
-* Launch the application
-* Listen to the voice greeting
-* Enter your name
-* Ask cybersecurity-related questions
-* Receive helpful responses and tips
-
-
-
-## Limitations
-
-* Limited to predefined responses
-* No advanced AI or machine learning
-* Console-based interface only
-
-
-
-##  Future Improvements
-
-* Add AI-powered responses
-* Expand cybersecurity topics
-* Develop a graphical user interface (GUI)
-* Integrate real-time threat detection
-
-
-##  Author
-
+## Author
 Malesela Regina Mothiba
+ST10439241
+Developed as part of the PROG6221 Programming Project focused on cybersecurity awareness and software development using C# and .NET.
 
-
-##  Submission Note
-
-This project was developed as part of an academic assignment. GitHub commits reflect the development stages, and CI was implemented using GitHub Actions.
